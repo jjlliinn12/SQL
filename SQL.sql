@@ -59,7 +59,7 @@ SET first_name='HARPO' WHERE first_name='GROUCHO';
 select * FROM actor
 WHERE last_name='WILLIAMS';
 
--- 4d UNSURE
+-- 4d 
 UPDATE actor
 SET first_name='GROUCHO' 
 WHERE first_name='HARPO';
@@ -93,7 +93,7 @@ film.film_id = film_actor.film_id
 GROUP BY title;
 
 
--- 6d Only know how to find the film_id first and use film_id value for a filtered COUNT(*) 
+-- 6d
 -- SELECT * FROM film JOIN inventory on film.film_id = inventory.film_id;
 -- SELECT * FROM inventory;
 SELECT * FROM film
@@ -102,7 +102,7 @@ SELECT COUNT(*) FROM inventory WHERE film_id=439;
 -- 6 copies of Hunback Impossible
 
 
--- 6e.
+-- 6e
 SELECT * FROM payment;
 SELECT * FROM customer;
 
